@@ -1,0 +1,37 @@
+Mining block 1 with 3 txs ... (difficulty=4)
+Block 1 mined: 00000a495658a2533399690f6672edce1a66d2f65e06b062d8a138130ab8e918 (nonce=63809, time=0.34s)
+Mining block 2 with 2 txs ... (difficulty=4)
+Block 2 mined: 000076d84f231c3b50fb490d219358812a6d51eb15272a7c097c81791a25b480 (nonce=48755, time=0.24s)
+--- Block 0 ---
+Timestamp: 2025-09-18T05:40:39.991906
+Previous: 0
+Nonce: 0
+Hash: 618039c2d10a8a911a365144271087c6811135cf2052758c54edb893e5406607
+Transactions:
+  {'genesis': True}
+
+--- Block 1 ---
+Timestamp: 2025-09-18T05:40:39.992023
+Previous: 618039c2d10a8a911a365144271087c6811135cf2052758c54edb893e5406607
+Nonce: 63809
+Hash: 00000a495658a2533399690f6672edce1a66d2f65e06b062d8a138130ab8e918
+Transactions:
+  {'from': 'alice', 'to': 'bob', 'amount': 10}
+  {'from': 'bob', 'to': 'charlie', 'amount': 2}
+  {'from': 'network', 'to': 'miner1', 'amount': 50}
+
+--- Block 2 ---
+Timestamp: 2025-09-18T05:40:40.332638
+Previous: 00000a495658a2533399690f6672edce1a66d2f65e06b062d8a138130ab8e918
+Nonce: 48755
+Hash: 000076d84f231c3b50fb490d219358812a6d51eb15272a7c097c81791a25b480
+Transactions:
+  {'from': 'charlie', 'to': 'alice', 'amount': 1}
+  {'from': 'network', 'to': 'miner1', 'amount': 50}
+
+Balances:
+alice -9
+bob 8
+charlie 1
+miner1 100
+Valid: True
